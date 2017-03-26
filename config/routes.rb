@@ -9,10 +9,12 @@ root 'groups#index'
       post :quit
     end
     resources :posts
+
   end
 
   namespace :account do
     resources :groups
+    resources :posts
   end
 
 end
